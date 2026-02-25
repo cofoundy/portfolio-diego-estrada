@@ -1,0 +1,173 @@
+% Harvard-Format Professional CV — Diego Estrada Medina
+% Compile with: xelatex cv-estrada.tex
+% Requires: fontspec, fontawesome5, xcolor, geometry, enumitem, hyperref
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.6em}{0.3em}
+
+% --- List Formatting ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Diego Estrada Medina} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Lima, Per\'{u}
+  \quad\faIcon{envelope}\enspace \href{mailto:e.diegoandre@gmail.com}{e.diegoandre@gmail.com}
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://linkedin.com/in/diegoestradamed}{linkedin.com/in/diegoestradamed}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EXPERIENCE
+% ============================================
+\section{Experience}
+
+\entry{Match Comms}{Lima, Per\'{u}}{Community and Content Manager}{2022 --- 2024}
+\begin{itemize}
+  \item Managed end-to-end communication strategies for 3 international clothing brands (Gap, Banana Republic, Kipling), aligning messaging with each brand's identity
+  \item Developed 50+ pieces of creative content per quarter, driving consistent brand engagement across digital platforms
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Profonanpe}{Lima, Per\'{u}}{Consultant for Social Media}{2023}
+\begin{itemize}
+  \item Designed and executed creative content strategies that boosted audience engagement across key social media channels
+  \item Grew Instagram following by 10,000+ followers through targeted campaigns over a 6-month period
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Sustainable Ocean Alliance Per\'{u}}{Remote}{Communications Director}{2020 --- 2022}
+\begin{itemize}
+  \item Spearheaded awareness campaigns on marine conservation reaching 50,000+ users across social media platforms
+  \item Produced multimedia content to promote ocean sustainability and engage youth audiences in 5+ countries
+  \item Coordinated strategic alliances with 10+ environmental organizations and grassroots movements
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Stakeholders Magazine}{Lima, Per\'{u}}{Journalist}{2019}
+\begin{itemize}
+  \item Researched and published articles on sustainability, corporate responsibility, and social impact for a leading industry publication
+  \item Conducted interviews with 15+ key figures in the environmental and business sectors
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% PROJECTS & ACHIEVEMENTS
+% ============================================
+\section{Projects \& Achievements}
+
+\entry{Ancestral Wisdom for the Future}{Climate Adaptation}{Project Coordinator}{2025}
+\begin{itemize}
+  \item Coordinated a cross-cultural project preserving Aymara ancestral knowledge in response to climate change
+  \item Led digital content creation training for Aymara youth, building a TikTok-based knowledge bank
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Ocean Watchers}{Environmental Monitoring}{Communications Lead}{2022}
+\begin{itemize}
+  \item Led communication strategies for a youth-driven environmental monitoring initiative
+  \item Strengthened community impact in areas affected by the La Pampilla oil spill in Lima
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Pacific Whale Festival}{Sustainable Tourism}{Communications Strategist}{2020 --- 2021}
+\begin{itemize}
+  \item Designed the festival's communication strategy focused on sustainable tourism, reaching 5,000+ attendees
+  \item Coordinated interactive and educational activities to engage diverse audiences
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% INTERNATIONAL EVENTS & LEADERSHIP
+% ============================================
+\section{Leadership \& Activities}
+
+\entry{COP16: Biodiversity Conference}{Cali, Colombia}{Delegate --- Creadores del Ma\~{n}ana (TikTok)}{2024}
+\begin{itemize}
+  \item Represented ``Creadores del Ma\~{n}ana'' collective, creating content on agrobiodiversity and food security
+\end{itemize}
+\vspace{0.3em}
+
+\entry{RCOY Latinoamericana}{Bel\'{e}m, Brazil}{Youth Climate Delegate}{2024}
+\begin{itemize}
+  \item Participated in the Regional Conference of Youth on Climate, collaborating with 200+ Latin American delegates
+\end{itemize}
+\vspace{0.3em}
+
+\entry{DeudaXClima (Debt for Climate)}{International}{Active Member}{2024 --- Present}
+\begin{itemize}
+  \item Contributed communication strategies to a global movement advocating for climate debt cancellation
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% EDUCATION
+% ============================================
+\section{Education}
+
+\entry{San Martin de Porres University}{Lima, Per\'{u}}{Degree in Communications}{2015 --- 2021}
+\begin{itemize}
+  \item Specialized in environmental and cultural communication
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Toulouse Lautrec}{Lima, Per\'{u}}{University Extension Course in Web Design}{2019}
+\vspace{0.3em}
+
+% ============================================
+% SKILLS & ADDITIONAL
+% ============================================
+\section{Skills \& Additional}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Technical:} & Content Strategy, Digital Marketing, Graphic Design, Visual Storytelling, Social Media Management, Web Analytics \\
+\textbf{Languages:} & Spanish (Native), English \\
+\textbf{Certifications:} & Young People for Climate Finance (2024), Youth for Climate Action (2024), BausaTech Camp Mentor (2023), Youth Ambassadors for the Climate (2023) \\
+\textbf{Interests:} & Climate Justice, Ocean Conservation, LGBTQ+ Rights, Gender Equality, Sustainable Fashion, Ancestral Culture \\
+\end{tabularx}
+
+\end{document}
